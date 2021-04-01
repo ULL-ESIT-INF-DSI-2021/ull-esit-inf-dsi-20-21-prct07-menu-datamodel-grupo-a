@@ -1,10 +1,10 @@
 title: Práctica 7 - Menús y Datamodel
-author: Eduardo Brito, Nestor García 
-email: 
+author: Eduardo Brito, Nestor Torres
+email:
 description: > # this means to ignore newlines until "baseurl:"
   Informe de la Practica 7 de la asignatura de Desarrollo de Sistemas Informaticos por Eduardo Brito
 # social links
-github_username:  eduardobritosan, alu0101021768 # DO NOT include the @ character, or else the build will fail!
+github_username: eduardobritosan, alu0101021768 # DO NOT include the @ character, or else the build will fail!
 
 show_excerpts: true # set to false to remove excerpts on the homepage
 theme: jekyll-theme-cayman
