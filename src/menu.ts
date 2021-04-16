@@ -40,6 +40,7 @@ export class Menu {
     this.setFoodGroupList(this.getGroupList());
     this.setMainGroup(this.calcMainGroup());
   }
+
   private plateValidityCheck(plates: Plate[]): boolean {
     if (plates.length < 3) {
       return false;
@@ -122,11 +123,13 @@ export class Menu {
   }
 
   public getGroupList(): string[] {
-    const result: string[] = [];
+    const result = new Set<string>();
     this.getPlates().forEach((value) => {
-      result.concat(value.getFoodGroupList());
+      value.getFoodGroupList().forEach((element) => {
+        result.add(element);
+      });
     });
-    return [...new Set(result)];
+    return Array.from(result.values());
   }
 
   public calcMainGroup(): string {

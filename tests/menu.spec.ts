@@ -67,8 +67,18 @@ describe('Menu class methods tested with a menu class instance', () => {
     it('getFoodGroupList() should return' +
       '[\'Fruit\', \'DairyProduct\', \'Vegetables\', Meat]',
       () => {
-        expect(menuInstance.getFoodGroupList()).to.deep.equal(
-          ['Fruit', 'DairyProduct', 'Vegetables, Meat']);
+        expect(menuInstance.getFoodGroupList()).to.eql(
+          ['Fruit', 'DairyProduct', 'Vegetables', 'Meat']);
       });
+  });
+  describe('Add and delete', () => {
+    it('add() should work properly', () => {
+      menuInstance.add(bananaSplit);
+      expect(menuInstance.getPlates().length).to.equal(4);
+    });
+    it('remove() should work properly', () => {
+      menuInstance.remove(bananaSplit);
+      expect(menuInstance.getPlates().length).to.equal(3);
+    });
   });
 });
