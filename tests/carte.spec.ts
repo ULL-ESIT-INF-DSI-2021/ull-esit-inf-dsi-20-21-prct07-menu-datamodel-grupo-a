@@ -55,20 +55,16 @@ const menuInstance1 = new Menu('testMenu1',
 const menuInstance2 = new Menu('testMenu2',
   [steakNAsparagus, manchegoSalad, manchegoSalad, bananaSplit]);
 
-const carteInstance = new Carte('testCarte',
-  [menuInstance1, menuInstance2]);
+const carteInstance = new Carte([menuInstance1, menuInstance2]);
 
 describe('Carte class methods tested with a carte class instance', () => {
   describe('Getters', () => {
-    it('getName() should return testMenu', () => {
-      expect(carteInstance.getName()).to.equal('testCarte');
-    });
     it('getAvailablePlates() should be size 7', () => {
-      expect(carteInstance.getAvailablePlates().length).to.equal(7);
+      expect(carteInstance.getAvailablePlates().length).to.equal(3);
     });
-    it('getAvailableMenus() should size 2',
+    it('getMenus() should size 2',
       () => {
-        expect(carteInstance.getAvailableMenus().length).to
+        expect(carteInstance.getMenus().length).to
           .equal(2);
       });
   });

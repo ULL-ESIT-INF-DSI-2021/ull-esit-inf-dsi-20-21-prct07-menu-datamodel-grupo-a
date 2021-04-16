@@ -1,5 +1,3 @@
-import { plateCategory } from './helpers';
-import { Food } from './food';
 import { Plate } from './plate';
 
 /**

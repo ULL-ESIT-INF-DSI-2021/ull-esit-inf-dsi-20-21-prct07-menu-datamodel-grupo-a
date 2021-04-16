@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for tests/menu.spec.ts</title>
+    <title>Code coverage report for tests/carte.spec.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">tests</a> menu.spec.ts</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">tests</a> carte.spec.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>37/37</span>
+                <span class='fraction'>29/29</span>
             </div>
         
             
@@ -39,14 +39,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>9/9</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>37/37</span>
+                <span class='fraction'>29/29</span>
             </div>
         
             
@@ -128,20 +128,8 @@
 <a name='L69'></a><a href='#L69'>69</a>
 <a name='L70'></a><a href='#L70'>70</a>
 <a name='L71'></a><a href='#L71'>71</a>
-<a name='L72'></a><a href='#L72'>72</a>
-<a name='L73'></a><a href='#L73'>73</a>
-<a name='L74'></a><a href='#L74'>74</a>
-<a name='L75'></a><a href='#L75'>75</a>
-<a name='L76'></a><a href='#L76'>76</a>
-<a name='L77'></a><a href='#L77'>77</a>
-<a name='L78'></a><a href='#L78'>78</a>
-<a name='L79'></a><a href='#L79'>79</a>
-<a name='L80'></a><a href='#L80'>80</a>
-<a name='L81'></a><a href='#L81'>81</a>
-<a name='L82'></a><a href='#L82'>82</a>
-<a name='L83'></a><a href='#L83'>83</a>
-<a name='L84'></a><a href='#L84'>84</a>
-<a name='L85'></a><a href='#L85'>85</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L72'></a><a href='#L72'>72</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -195,24 +183,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -220,8 +193,9 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -233,6 +207,7 @@ import { Vegetables } from '../src/vegetables';
 import { Meat } from '../src/meat';
 import { Plate } from '../src/plate';
 import { Menu } from '../src/menu';
+import { Carte } from '../src/carte';
 &nbsp;
 const apple = new Fruit('apple', { country: 'Spain', city: 'Granada' },
   { carbs: 12, lipids: 0.17, proteins: 0.3 }, 50, 53, 1.65);
@@ -275,38 +250,24 @@ const steakNAsparagus =
 const bananaSplit = new Plate('banana split',
   [iceCream, banana], 'dessert');
 &nbsp;
-const menuInstance = new Menu('testMenu',
+const menuInstance1 = new Menu('testMenu1',
   [manchegoSalad, steakNAsparagus, bananaSplit]);
 &nbsp;
-describe('Menu class methods tested with a menu class instance', () =&gt; {
+const menuInstance2 = new Menu('testMenu2',
+  [steakNAsparagus, manchegoSalad, manchegoSalad, bananaSplit]);
+&nbsp;
+const carteInstance = new Carte([menuInstance1, menuInstance2]);
+&nbsp;
+describe('Carte class methods tested with a carte class instance', () =&gt; {
   describe('Getters', () =&gt; {
-    it('getName() should return testMenu', () =&gt; {
-      expect(menuInstance.getName()).to.equal('testMenu');
+    it('getAvailablePlates() should be size 7', () =&gt; {
+      expect(carteInstance.getAvailablePlates().length).to.equal(3);
     });
-    it('getKcal() should return 829.5', () =&gt; {
-      expect(menuInstance.getKcal()).to.equal(829.5);
-    });
-    it('getTotalPrice() should return 8.0815',
+    it('getMenus() should size 2',
       () =&gt; {
-        expect(menuInstance.getTotalPrice()).to
-          .equal(8.0815);
+        expect(carteInstance.getMenus().length).to
+          .equal(2);
       });
-    it('getFoodGroupList() should return' +
-      '[\'Fruit\', \'DairyProduct\', \'Vegetables\', Meat]',
-      () =&gt; {
-        expect(menuInstance.getFoodGroupList()).to.eql(
-          ['Fruit', 'DairyProduct', 'Vegetables', 'Meat']);
-      });
-  });
-  describe('Add and delete', () =&gt; {
-    it('add() should work properly', () =&gt; {
-      menuInstance.add(bananaSplit);
-      expect(menuInstance.getPlates().length).to.equal(4);
-    });
-    it('remove() should work properly', () =&gt; {
-      menuInstance.remove(bananaSplit);
-      expect(menuInstance.getPlates().length).to.equal(3);
-    });
   });
 });
 &nbsp;</pre></td></tr></table></pre>
