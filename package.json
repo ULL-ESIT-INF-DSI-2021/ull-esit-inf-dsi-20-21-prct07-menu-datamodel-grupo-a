@@ -8,7 +8,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "nyc mocha",
+    "test": "mocha",
     "doc": "typedoc"
   },
   "keywords": [],
