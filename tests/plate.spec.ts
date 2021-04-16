@@ -37,16 +37,16 @@ describe('Plate class methods tested with a plate class instance', () => {
           .equal(1.9615);
       });
     it('getMainGroup() should return vegetables', () => {
-      expect(plateInstance.getMainGroup()).to.equal('vegetables');
+      expect(plateInstance.getMainGroup()).to.equal('Vegetables');
     });
     it('getCategory() should return first', () => {
       expect(plateInstance.getCategory()).to.equal('first');
     });
     it('getFoodGroupList() should return' +
-      '[\'fruit\', \'dairyProduct\', \'vegetable\']',
+      '[\'Fruit\', \'DairyProduct\', \'Vegetables\']',
       () => {
         expect(plateInstance.getFoodGroupList()).to.deep.equal(
-          ['fruit', 'dairyProduct', 'vegetable']);
+          ['Fruit', 'DairyProduct', 'Vegetables']);
       });
   });
 });
