@@ -8,8 +8,9 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "nyc mocha",
-    "doc": "typedoc"
+    "test": "mocha",
+    "doc": "typedoc",
+    "coverage": "nyc npm test && nyc report --reporter=lcov"
   },
   "keywords": [],
   "author": "",
