@@ -19,6 +19,10 @@ export class dbManager {
     this.database = lowdb(new FileSync('Command.json'));
     if (this.database.has('command').value()) {
       const dbCommand = this.database.get('userCommand').value();
+      /* Aqui deberia ir la modificacion de la comanda*/
+    } else {
+      this.database.set('userCommand', command).write();
+      /**/
     }
   }
 
