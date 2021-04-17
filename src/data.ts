@@ -219,18 +219,54 @@ const steakNAsparagus =
 const hakeNRice =
   new Plate('hake and rice',
     [hake, whiteRice, garlic], 'second');
+const porkTenderloinNBroccoli =
+  new Plate('pork tenderloin with broccoli',
+    [porkTenderloin, broccoli, garlic, onion], 'second');
+const beefChopNLettuce =
+  new Plate('beef chop with lettuce',
+    [beefChop, lettuce, almond, pea], 'second');
+const lentilPlate =
+  new Plate('lentil soup',
+    [lentil, chickenEgg, onion, garlic], 'second');
+const blackBeansPlate =
+  new Plate('black beans soup',
+    [blackBeans, chickenEgg, onion, garlic], 'second');
+const whiteBeansPlate =
+  new Plate('white beans soup',
+    [whiteBeans, chickenEgg, onion, garlic], 'second');
+const tunaBonitoTartar =
+  new Plate('white beans soup',
+    [tuna, bonito, sesameSeeds, avocado], 'second');
 
 //  Desserts
 
 const bananaSplit = new Plate('banana split',
   [iceCream, banana], 'dessert');
+const kefirNNuts = new Plate('kefir and nuts',
+  [kefir, nuts], 'dessert');
+const strawberryIcecream = new Plate('strawberry and ice cream',
+  [strawberry, iceCream], 'dessert');
+const flan = new Plate('flan',
+  [eggWhite, lemon], 'dessert');
+const fruitKefir = new Plate('fruit kefir',
+  [kefir, strawberry, banana, lemon], 'dessert');
 
 //  Menus
 
-const menuInstance1 = new Menu('testMenu1',
-  [manchegoSalad, steakNAsparagus, bananaSplit]);
+const fishLoverMenu = new Menu('Fish Lover Menu',
+  [brownRiceAnchovies, manchegoSalad, hakeNRice, bananaSplit]);
 
-const menuInstance2 = new Menu('testMenu2',
-  [steakNAsparagus, manchegoSalad, manchegoSalad, bananaSplit]);
+const meatLoverMenu = new Menu('Meat Lover Menu',
+  [steakNAsparagus, meatNCheese, baconSalad, kefirNNuts]);
 
-const carteInstance = new Carte([menuInstance1, menuInstance2]);
+const chickenLoverMenu = new Menu('Chicken Lover Menu',
+  [spinachDip, chickenSalad, blackBeansPlate, flan]);
+
+const veggieLoverMenu = new Menu('Veggie Lover Menu',
+  [hummus, brieSalad, whiteBeansPlate, fruitKefir]);
+
+const exclusiveMenu = new Menu('Exclusive Menu',
+  [riceCaviar, brieSalad, tunaBonitoTartar, strawberryIcecream]);
+
+const carteInstance = new Carte([fishLoverMenu, meatLoverMenu,
+  chickenLoverMenu, veggieLoverMenu, exclusiveMenu]);
