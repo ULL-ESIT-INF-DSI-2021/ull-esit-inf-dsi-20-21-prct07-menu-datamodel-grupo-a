@@ -12,4 +12,8 @@ export class jsonPlate {
       foodGroupList: plate.getFoodGroupList(),
     };
   }
+
+  public static plateCollectionToJson(selectedPlates: Plate[]): Object[] {
+    return selectedPlates.map((plate) => jsonPlate.getJsonPlate(plate));
+  }
 }

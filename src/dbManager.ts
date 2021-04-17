@@ -25,20 +25,4 @@ export class dbManager {
       /**/
     }
   }
-
-  public menuCollectionToJson(selectedMenus: Menu[]): Object[] {
-    return selectedMenus.map((menu) => jsonMenu.getJsonMenu(menu));
-  }
-
-  public plateCollectionToJson(selectedPlates: Plate[]): Object[] {
-    return selectedPlates.map((plate) => jsonPlate.getJsonPlate(plate));
-  }
-
-  public setMenuCollection(selectedMenus: Menu[]) {
-    this.menuJsonCollection = this.menuCollectionToJson(selectedMenus);
-  }
-
-  public setPlatesCollection(selectedPlates: Plate[]) {
-    this.platesJsonCollection = this.plateCollectionToJson(selectedPlates);
-  }
 }

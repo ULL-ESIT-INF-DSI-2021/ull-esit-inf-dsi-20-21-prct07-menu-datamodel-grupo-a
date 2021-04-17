@@ -12,4 +12,8 @@ export class jsonMenu {
       foodGroupList: menu.getFoodGroupList(),
     };
   }
+
+  public static menuCollectionToJson(selectedMenus: Menu[]): Object[] {
+    return selectedMenus.map((menu) => jsonMenu.getJsonMenu(menu));
+  }
 }
