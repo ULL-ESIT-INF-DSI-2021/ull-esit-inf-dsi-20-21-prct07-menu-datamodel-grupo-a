@@ -100,6 +100,7 @@ export class Command {
    * @param menu the menu to be modified
    */
   public promptDeletePlateFromCustomMenu(menu: Menu) {
+    this.printDetails();
     inquirer.prompt([{
       type: 'checkbox',
       name: 'command',
@@ -110,40 +111,40 @@ export class Command {
       }))
     }]).then((answers) => {
       const platesToDelete = answers.command as Plate[];
+      const newPlates = menu.getPlates();
       platesToDelete.forEach((element) => {
-        platesToDelete.splice(platesToDelete.indexOf(element), 1));
+        newPlates.splice(platesToDelete.indexOf(element), 1);
+      });
+      const newMenu = new Menu(`${newPlates[0].getName()}` +
+        ` and company custom menu`, newPlates);
+      this.setSelectedMenus([newMenu]);
+      this.promptCreateCustom();
     });
-
-    platesToDelete.concat(menu.getPlates());
-    const newMenu = new Menu(`${platesToDelete[0].getName()}` +
-      ` and company custom menu`, platesToDelete);
-    this.setSelectedMenus([newMenu]);
-    this.promptAddNewPlateToCustomMenu(newMenu);
-  });
-}
+  }
   /**
    * @description The prompt to add new elements to the existing menu.
    * It comes from [[@link Command.promptModifyMenuOptions]]
    * @param menu the menu from which we are basing the new one
    */
   public promptAddNewPlateToCustomMenu(menu: Menu) {
-  inquirer.prompt([{
-    type: 'checkbox',
-    name: 'command',
-    message: 'Escoja de entre los platos predeterminados',
-    choices: this.getRestaurantCarte().getAvailablePlates().map((val) => ({
-      name: val.getName(),
-      value: val
-    }))
-  }]).then((answers) => {
-    const platesOfNewMenu = answers.command as Plate[];
-    platesOfNewMenu.concat(menu.getPlates());
-    const newMenu = new Menu(`${platesOfNewMenu[0].getName()}` +
-      ` and company custom menu`, platesOfNewMenu);
-    this.setSelectedMenus([newMenu]);
-    this.promptAddNewPlateToCustomMenu(newMenu);
-  });
-}
+    this.printDetails();
+    inquirer.prompt([{
+      type: 'checkbox',
+      name: 'command',
+      message: 'Escoja de entre los platos predeterminados',
+      choices: this.getRestaurantCarte().getAvailablePlates().map((val) => ({
+        name: val.getName(),
+        value: val
+      }))
+    }]).then((answers) => {
+      const platesOfNewMenu = answers.command as Plate[];
+      platesOfNewMenu.concat(menu.getPlates());
+      const newMenu = new Menu(`${platesOfNewMenu[0].getName()}` +
+        ` and company custom menu`, platesOfNewMenu);
+      this.setSelectedMenus([newMenu]);
+      this.promptCreateCustom();
+    });
+  }
 
   /**
    * @description The prompt to modify an existing menu.
@@ -151,46 +152,48 @@ export class Command {
    * @param menu the menu from which we are basing the new one
    */
   public promptModifyMenuOptions(menu: Menu) {
-  inquirer.prompt([{
-    type: 'list',
-    name: 'command',
-    message: 'Escoja una opcion',
-    choices: Object.values(UIModifyMenuOptions)
-  }]).then((answers) => {
-    switch (answers['command']) {
-      case UIModifyMenuOptions.AddNewPlates:
-        this.promptAddNewPlateToCustomMenu(menu);
-        break;
-      case UIModifyMenuOptions.DeletePlates:
-        // this.promptDeletePlateFromCustomMenu(menu);
-        break;
-      case UIModifyMenuOptions.Back:
-        this.promptChooseMenuCreateCustom();
-        break;
-    }
-  });
-}
+    this.printDetails();
+    inquirer.prompt([{
+      type: 'list',
+      name: 'command',
+      message: 'Escoja una opcion',
+      choices: Object.values(UIModifyMenuOptions)
+    }]).then((answers) => {
+      switch (answers['command']) {
+        case UIModifyMenuOptions.AddNewPlates:
+          this.promptAddNewPlateToCustomMenu(menu);
+          break;
+        case UIModifyMenuOptions.DeletePlates:
+          this.promptDeletePlateFromCustomMenu(menu);
+          break;
+        case UIModifyMenuOptions.Back:
+          this.promptChooseMenuCreateCustom();
+          break;
+      }
+    });
+  }
   /**
    * @description Creates new menu from plate selected.
    */
   public promptChoosePlateCreateCustom() {
-  inquirer.prompt([{
-    type: 'checkbox',
-    name: 'command',
-    message: 'Escoja de entre los platos predeterminados',
-    choices: this.getRestaurantCarte().getAvailablePlates().map((val) => ({
-      name: val.getName(),
-      value: val
-    }))
-  }]).then((answers) => {
-    const platesOfNewMenu = answers.command as Plate[];
-    const newMenu = new Menu(`${platesOfNewMenu[0].getName()}` +
-      ` and company custom menu`,
-      platesOfNewMenu);
-    this.setSelectedMenus([newMenu]);
-    this.promptCreateCustom();
-  });
-}
+    this.printDetails();
+    inquirer.prompt([{
+      type: 'checkbox',
+      name: 'command',
+      message: 'Escoja de entre los platos predeterminados',
+      choices: this.getRestaurantCarte().getAvailablePlates().map((val) => ({
+        name: val.getName(),
+        value: val
+      }))
+    }]).then((answers) => {
+      const platesOfNewMenu = answers.command as Plate[];
+      const newMenu = new Menu(`${platesOfNewMenu[0].getName()}` +
+        ` and company custom menu`,
+        platesOfNewMenu);
+      this.setSelectedMenus([newMenu]);
+      this.promptCreateCustom();
+    });
+  }
 
   /**
    * @description Inquirer prompt, coming from
@@ -198,18 +201,19 @@ export class Command {
    * in order to create one from it.
    */
   public promptChooseMenuCreateCustom() {
-  inquirer.prompt([{
-    type: 'list',
-    name: 'command',
-    message: 'Escoja de entre los menus predeterminados',
-    choices: this.getRestaurantCarte().getMenus().map((val) => ({
-      name: val.getName(),
-      value: val
-    }))
-  }]).then((answers) => {
-    this.promptModifyMenuOptions(answers.command);
-  });
-}
+    this.printDetails();
+    inquirer.prompt([{
+      type: 'list',
+      name: 'command',
+      message: 'Escoja de entre los menus predeterminados',
+      choices: this.getRestaurantCarte().getMenus().map((val) => ({
+        name: val.getName(),
+        value: val
+      }))
+    }]).then((answers) => {
+      this.promptModifyMenuOptions(answers.command);
+    });
+  }
 
   /**
    * @description Inquirer prompt that gives the option to either create a menu
@@ -217,44 +221,46 @@ export class Command {
    * plates. Comes from [[@link Command.promptCreateCommand]]
    */
   public promptCreateCustom() {
-  inquirer.prompt({
-    type: 'list',
-    name: 'command',
-    message: 'Escoge la opcion correspondiente',
-    choices: Object.values(UIOptionsCreateCustom)
-  }).then((answers) => {
-    switch (answers['command']) {
-      case UIOptionsCreateCustom.SelectStartingMenu:
-        this.promptChooseMenuCreateCustom();
-        break;
-      case UIOptionsCreateCustom.SelectIndividualPlates:
-        this.promptChoosePlateCreateCustom();
-        break;
-      case UIOptionsCreateCustom.Back:
-        this.promptStart();
-        break;
-    }
-  });
-}
+    this.printDetails();
+    inquirer.prompt({
+      type: 'list',
+      name: 'command',
+      message: 'Escoge la opcion correspondiente',
+      choices: Object.values(UIOptionsCreateCustom)
+    }).then((answers) => {
+      switch (answers['command']) {
+        case UIOptionsCreateCustom.SelectStartingMenu:
+          this.promptChooseMenuCreateCustom();
+          break;
+        case UIOptionsCreateCustom.SelectIndividualPlates:
+          this.promptChoosePlateCreateCustom();
+          break;
+        case UIOptionsCreateCustom.Back:
+          this.promptStart();
+          break;
+      }
+    });
+  }
   /**
    * @description Shows all available plates and makes the user choose any
    * number of them in order to add them in a non menu way. Comes from
    * [[@link Command.promptCreateCommand]]
    */
   public promptChoosePlate() {
-  inquirer.prompt([{
-    type: 'checkbox',
-    name: 'command',
-    message: 'Escoja de entre los platos predeterminados',
-    choices: this.getRestaurantCarte().getAvailablePlates().map((val) => ({
-      name: val.getName(),
-      value: val
-    }))
-  }]).then((answers) => {
-    this.setSelectedPlates(answers.command);
-    this.promptCreateCommand();
-  });
-}
+    this.printDetails();
+    inquirer.prompt([{
+      type: 'checkbox',
+      name: 'command',
+      message: 'Escoja de entre los platos predeterminados',
+      choices: this.getRestaurantCarte().getAvailablePlates().map((val) => ({
+        name: val.getName(),
+        value: val
+      }))
+    }]).then((answers) => {
+      this.setSelectedPlates(answers.command);
+      this.promptCreateCommand();
+    });
+  }
 
   /**
   * @description Inquirer prompt, coming from
@@ -262,19 +268,20 @@ export class Command {
   * that makes you choose between different menus to add to a command
   */
   public promptChooseMenu() {
-  inquirer.prompt([{
-    type: 'checkbox',
-    name: 'command',
-    message: 'Escoja de entre los menus predeterminados',
-    choices: this.getRestaurantCarte().getMenus().map((val) => ({
-      name: val.getName(),
-      value: val
-    }))
-  }]).then((answers) => {
-    this.setSelectedMenus(answers.command);
-    this.promptCreateCommand();
-  });
-}
+    this.printDetails();
+    inquirer.prompt([{
+      type: 'checkbox',
+      name: 'command',
+      message: 'Escoja de entre los menus predeterminados',
+      choices: this.getRestaurantCarte().getMenus().map((val) => ({
+        name: val.getName(),
+        value: val
+      }))
+    }]).then((answers) => {
+      this.setSelectedMenus(answers.command);
+      this.promptCreateCommand();
+    });
+  }
 
   /**
    * @description one of the base prompts, coming from
@@ -283,77 +290,75 @@ export class Command {
    * of new menus, that can be created from existing menus or from scratch
    */
   public promptCreateCommand() {
-  inquirer.prompt({
-    type: 'list',
-    name: 'command',
-    message: 'Escoja que desea añadir a su pedido',
-    choices: Object.values(UIOptionsCreateCommand)
-  }).then((answers) => {
-    switch (answers['command']) {
-      case UIOptionsCreateCommand.SelectMenu:
-        this.promptChooseMenu();
-        break;
-      case UIOptionsCreateCommand.SelectPlate:
-        this.promptChoosePlate();
-        break;
-      case UIOptionsCreateCommand.CreateCustom:
-        this.promptCreateCustom();
-        break;
-      case UIOptionsCreateCommand.Back:
-        this.promptStart();
-        break;
-    }
-  });
-}
+    this.printDetails();
+    inquirer.prompt({
+      type: 'list',
+      name: 'command',
+      message: 'Escoja que desea añadir a su pedido',
+      choices: Object.values(UIOptionsCreateCommand)
+    }).then((answers) => {
+      switch (answers['command']) {
+        case UIOptionsCreateCommand.SelectMenu:
+          this.promptChooseMenu();
+          break;
+        case UIOptionsCreateCommand.SelectPlate:
+          this.promptChoosePlate();
+          break;
+        case UIOptionsCreateCommand.CreateCustom:
+          this.promptCreateCustom();
+          break;
+        case UIOptionsCreateCommand.Back:
+          this.promptStart();
+          break;
+      }
+    });
+  }
 
   /**
  * @description Inquirer prompt that gives the option to either show all
  * menus or show all plates, coming from [[@link Command.promptStart]]
  */
   public promptShowCarte() {
-  inquirer.prompt({
-    type: 'list',
-    name: 'command',
-    message: 'Escoge que desea visualizar',
-    choices: Object.values(UIOptionsShowCarte)
-  }).then((answers) => {
-    switch (answers['command']) {
-      case UIOptionsShowCarte.ShowMenus:
-        this.showMenus();
-        break;
-      case UIOptionsShowCarte.ShowPlates:
-        this.showPlates();
-        break;
-      case UIOptionsShowCarte.Back:
-        break;
-    }
-    this.promptStart();
-  });
-}
+    this.printDetails();
+    inquirer.prompt({
+      type: 'list',
+      name: 'command',
+      message: 'Escoge que desea visualizar',
+      choices: Object.values(UIOptionsShowCarte)
+    }).then((answers) => {
+      switch (answers['command']) {
+        case UIOptionsShowCarte.ShowMenus:
+          this.showMenus();
+          break;
+        case UIOptionsShowCarte.ShowPlates:
+          this.showPlates();
+          break;
+        case UIOptionsShowCarte.Back:
+          break;
+      }
+      this.promptStart();
+    });
+  }
   /**
    * @description The starting prompt for the command.
    */
   public promptStart() {
-  this.printDetails();
-  inquirer.prompt({
-    type: 'list',
-    name: 'command',
-    message: 'Bienvenido a la comanda!',
-    choices: Object.values(UIOptionsStart)
-  }).then((answers) => {
-    switch (answers['command']) {
-      case UIOptionsStart.ShowCarte:
-        this.promptShowCarte();
-        break;
-      case UIOptionsStart.CreateCommand:
-        this.promptCreateCommand();
-        break;
-    }
-  });
+    this.printDetails();
+    inquirer.prompt({
+      type: 'list',
+      name: 'command',
+      message: 'Bienvenido a la comanda!',
+      choices: Object.values(UIOptionsStart)
+    }).then((answers) => {
+      switch (answers['command']) {
+        case UIOptionsStart.ShowCarte:
+          this.promptShowCarte();
+          break;
+        case UIOptionsStart.CreateCommand:
+          this.promptCreateCommand();
+          break;
+      }
+    });
+  }
 }
-}
-
-const testCommand = Command.getCommandInstance();
-testCommand.setRestaurantCarte(Data.carteInstance);
-testCommand.promptStart();
 
