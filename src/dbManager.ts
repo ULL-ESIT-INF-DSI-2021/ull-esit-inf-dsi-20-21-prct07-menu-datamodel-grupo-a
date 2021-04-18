@@ -17,18 +17,13 @@ export class DBManager {
 
   constructor(private username: string, command: Command) {
     this.database = lowdb(new FileSync('Command.json'));
-    if (this.database.has('userCommand').value()) {
+    if (this.database.has('userCommand.menus').value() ||
+        this.database.has('userCommand.plates').value()) {
       const dbCommand = this.database.get('userCommand').value();
       command.setSelectedMenus(dbCommand.menus);
       command.setSelectedPlates(dbCommand.plates);
     } else {
       this.database.set('userCommand', command).write();
-      command.getSelectedMenus().forEach((element) => {
-        command.setSelectedMenus([element]);
-      });
-      command.getSelectedPlates().forEach((element) => {
-        command.setSelectedPlates([element]);
-      });
     }
   }
 
@@ -49,8 +44,14 @@ const menu2 = new Menu('menu2', [
   Data.steakNAsparagus,
   Data.bananaSplit,
   Data.strawberryIcecream]);
+const menu3 = new Menu('menu3', [
+  Data.spinachDip,
+  Data.manchegoSalad,
+  Data.steakNAsparagus,
+  Data.strawberryIcecream]);
 
 const nestorCommand = Command.getCommandInstance();
 nestorCommand.setSelectedMenus([menu1, menu2]);
 const manager = new DBManager('nestor command', nestorCommand);
-// manager.storeCommand();
+nestorCommand.setSelectedMenus([menu3]);
+manager.storeCommand();
