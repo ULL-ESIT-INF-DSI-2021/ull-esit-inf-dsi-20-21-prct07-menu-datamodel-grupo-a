@@ -51,6 +51,7 @@ export class Command {
   public getSelectedPlates(): Plate[] {
     return this.selectedPlates;
   }
+
   public setSelectedPlates(plates: Plate[]) {
     this.selectedPlates.push(...plates);
   }

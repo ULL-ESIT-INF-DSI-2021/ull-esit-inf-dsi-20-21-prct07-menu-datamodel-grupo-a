@@ -10,7 +10,6 @@ import { Fish } from './fish';
 import { EggProduct } from './eggProduct';
 import { Legume } from './legume';
 
-
 // Available foods/ingredients
 
 //  Fruit
