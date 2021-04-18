@@ -99,7 +99,7 @@ Finalmente, tras acabar de configurar todo lo necesario para que se lanzen corre
 
 ## Conclusiones
 
-Durante el desarrollo, la fase del diseño de clases fue la mas sencilla, teniendo en cuenta como se ha practicado esto en las prácticas anteriores. Tras realizar los tests correspondientes, se inició el desarrollo de la interfaz de usuario con lowdb. La mayor complicación se encontró en la necesidad de trabajar con asincronía a pesar de no haberla impartido. Otro inconveniente, fue que el ejemplo del libro para inquirer y lowdb era sustancialmente mas sencillo que lo que se solicitaba en el guión con lo cual no lo pudimos usar demasiado como ejemplo. De resto, el proceso de diseño y codificación fue encontrado satisfactorio, independientemente de las complicaciones durante el desarrollo.
+Durante el desarrollo, la fase del diseño de clases fue la mas sencilla, teniendo en cuenta como se ha practicado esto en las prácticas anteriores. Tras realizar los tests correspondientes, se inició el desarrollo de la interfaz de usuario con lowdb. La mayor complicación se encontró en la necesidad de trabajar con asincronía a pesar de no haberla impartido. Otro inconveniente, fue que el ejemplo del libro para inquirer y lowdb era sustancialmente mas sencillo que lo que se solicitaba en el guión con lo cual no lo pudimos usar demasiado como ejemplo. De resto, el proceso de diseño y codificación fue encontrado satisfactorio, salvo por dos funcionalidades que no se pudieron implementar por falta de tiempo, vease la lectura del JSON generado por LowDB y, por otra parte, agregar platos adicionales a menus existentes falla.
 ## Bibliografía
 
 Inquirer.js (s.f.). En _NPM_. Recuperado el 10 de abril de 2021 de https://www.npmjs.com/package/inquirer
