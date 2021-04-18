@@ -1,9 +1,10 @@
+import { Printable } from './helpers';
 import { Plate } from './plate';
 
 /**
  * @description Class that handles a Menu, made out of different plates.
  */
-export class Menu {
+export class Menu implements Printable {
   private kcal: number;
   private totalPrice: number;
   private mainGroup: string;
@@ -226,5 +227,16 @@ export class Menu {
     } else {
       return result;
     }
+  }
+
+  public print(): string {
+    return '\nName: ' + this.getName() +
+      '\nKcal per 100 gr: ' + this.getKcal() +
+      '\nPrice per kg: ' + this.getTotalPrice() +
+      '\nGrupos de alimentos incluidos: ' + this.getFoodGroupList() +
+      '\nGrupo de alimento principal: ' + this.getMainGroup() +
+      '\nPlatos: ' + this.getPlates().map((val) => {
+        val.getName();
+      });
   }
 }
