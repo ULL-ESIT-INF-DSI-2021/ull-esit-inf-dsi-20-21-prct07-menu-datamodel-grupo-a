@@ -115,13 +115,16 @@ export class Plate {
     return this.foodGroupList;
   }
   /**
-   * @description
-   * @param foodGroupList
+   * @description Setter for the plate food group list
+   * @param foodGroupList Consists of a string array
    */
   public setFoodGroupList(foodGroupList: string[]): void {
     this.foodGroupList = foodGroupList;
   }
-
+  /**
+   * @description Method that calculates the total plate kcal
+   * @returns Returns a number
+   */
   public calcKcal(): number {
     let result: number = 0;
     this.getIngredients().forEach((value) => {
@@ -129,7 +132,10 @@ export class Plate {
     });
     return result;
   }
-
+  /**
+   * @description Method that calculates the total price of the plate
+   * @returns Returns a number
+   */
   public calcTotalPrice(): number {
     let result: number = 0;
     this.getIngredients().forEach((value) => {
@@ -137,7 +143,10 @@ export class Plate {
     });
     return result;
   }
-
+  /**
+   * @description Getter for the plate group list
+   * @returns Returns a string array
+   */
   public getGroupList(): string[] {
     const result: string[] = [];
     this.getIngredients().forEach((value) => {
@@ -147,7 +156,10 @@ export class Plate {
     });
     return result;
   }
-
+  /**
+   * @description Method that calculated the plate main food group
+   * @returns Returns a string
+   */
   public calcMainGroup(): string {
     const groupList: string[] = this.getGroupList();
     const result = groupList.sort((a, b) => {

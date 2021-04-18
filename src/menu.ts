@@ -144,14 +144,14 @@ export class Menu {
     this.mainGroup = mainGroup;
   }
   /**
-   * @description Getter for the menu group list
+   * @description Getter for the food group list
    * @returns Returns a string array
    */
   public getFoodGroupList(): string[] {
     return this.foodGroupList;
   }
   /**
-   * @description Setter for the menu group list
+   * @description Setter for the food group list
    * @param foodGroupList Consists of a string array
    */
   public setFoodGroupList(foodGroupList: string[]): void {
