@@ -56,7 +56,13 @@ Se diseñaron multiples prompts multiniveles para realizar todos las acciones so
 
 Lo interesante es la implementacion de los prompts, en donde hubo que trabajar con promesas y asincronía.
 
+![Inquirer](img/inquirer-test.png)
+
+También es llamativo que las opciones del inquirer se generen a través de enums.
+
 ## Implementacion de LowDB
+
+Se utiliza lowdb para guardar/leer los datos seleccionados en una comanda, a traves de los métodos provistos por la paquete @types/lowdb.
 
 ## Github Actions
 
