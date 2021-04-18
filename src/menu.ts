@@ -8,6 +8,7 @@ export class Menu {
   private totalPrice: number;
   private mainGroup: string;
   private foodGroupList: string[];
+  private id: number;
 
   /**
    * @description Class menu constructor
@@ -15,8 +16,26 @@ export class Menu {
    * @param plates Consists of a plate array
    */
   constructor(private name: string, private plates: Plate[]) {
+    this.setId(Math.floor(Math.random() * (20000000 - 1) + 1));
     this.update();
   }
+
+  /**
+  * @description Getter for the id
+  * @returns Returns a number
+  */
+  public getId(): number {
+    return this.id;
+  }
+
+  /**
+  * @description Setter for the id
+  * @param name Consists of a number
+  */
+  public setId(id: number): void {
+    this.id = id;
+  }
+
   /**
    * @description Method that adds a plate to a menu
    * @param newPlate Consists of a plate

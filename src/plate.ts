@@ -9,6 +9,7 @@ export class Plate {
   private totalPrice: number;
   private mainGroup: string;
   private foodGroupList: string[];
+  private id: number;
 
   /**
    * @description Constructor of plate class
@@ -18,10 +19,27 @@ export class Plate {
    */
   constructor(private name: string, private ingredients: Food[],
     private category: plateCategory) {
+    this.setId(Math.floor(Math.random() * (20000000 - 1) + 1));
     this.setKcal(this.calcKcal());
     this.setTotalPrice(this.calcTotalPrice());
     this.setFoodGroupList(this.getGroupList());
     this.setMainGroup(this.calcMainGroup());
+  }
+
+  /**
+* @description Getter for the id
+* @returns Returns a number
+*/
+  public getId(): number {
+    return this.id;
+  }
+
+  /**
+  * @description Setter for the id
+  * @param name Consists of a number
+  */
+  public setId(id: number): void {
+    this.id = id;
   }
   /**
    * @description Getter for the name
