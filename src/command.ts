@@ -1,14 +1,12 @@
 import { Carte } from './carte';
 import { Menu } from './menu';
 import { Plate } from './plate';
-import { jsonMenu } from './jsonMenu';
-import { jsonPlate } from './jsonPlate';
 
 
 export class Command {
   private restaurantCarte: Carte;
-  private selectedMenus: Object[];
-  private selectedPlates: Object[];
+  private selectedMenus: Menu[] = [];
+  private selectedPlates: Plate[] = [];
 
   private static commandInstance: Command;
 
@@ -28,18 +26,19 @@ export class Command {
     this.restaurantCarte = carte;
   }
 
-  public getSelectedMenus(): Object[] {
+  public getSelectedMenus(): Menu[] {
     return this.selectedMenus;
   }
   public setSelectedMenus(menus: Menu[]) {
-    this.selectedMenus = jsonMenu.menuCollectionToJson(menus);
+    this.selectedMenus.push(...menus);
   }
 
-  public getSelectedPlates(): Object[] {
+  public getSelectedPlates(): Plate[] {
     return this.selectedPlates;
   }
+
   public setSelectedPlates(plates: Plate[]) {
-    this.selectedPlates = jsonPlate.plateCollectionToJson(plates);
+    this.selectedPlates.push(...plates);
   }
 
   printDetails(): void {

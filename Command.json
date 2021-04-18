@@ -1,0 +1,1928 @@
+{
+  "userCommand": {
+    "selectedMenus": [
+      {
+        "name": "menu1",
+        "plates": [
+          {
+            "name": "hummus",
+            "ingredients": [
+              {
+                "name": "chickpea",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 49.6,
+                  "lipids": 5.4,
+                  "proteins": 21.3
+                },
+                "weight": 50,
+                "kcalPer100gr": 332,
+                "pricePerKg": 5
+              },
+              {
+                "name": "lemon",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 9,
+                  "lipids": 0.4,
+                  "proteins": 0.7
+                },
+                "weight": 25,
+                "kcalPer100gr": 44,
+                "pricePerKg": 6
+              }
+            ],
+            "category": "entree",
+            "kcal": 177,
+            "totalPrice": 0.4,
+            "foodGroupList": [
+              "Legume",
+              "Fruit"
+            ],
+            "mainGroup": "Fruit"
+          },
+          {
+            "name": "manchego salad",
+            "ingredients": [
+              {
+                "name": "apple",
+                "origin": {
+                  "country": "Spain",
+                  "city": "Granada"
+                },
+                "macros": {
+                  "carbs": 12,
+                  "lipids": 0.17,
+                  "proteins": 0.3
+                },
+                "weight": 50,
+                "kcalPer100gr": 53,
+                "pricePerKg": 1.65
+              },
+              {
+                "name": "manchego",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Mancha"
+                },
+                "macros": {
+                  "carbs": 0.42,
+                  "lipids": 33.54,
+                  "proteins": 26.01
+                },
+                "weight": 50,
+                "kcalPer100gr": 408,
+                "pricePerKg": 34.9
+              },
+              {
+                "name": "spinach",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 3.63,
+                  "lipids": 0.39,
+                  "proteins": 2.89
+                },
+                "weight": 50,
+                "kcalPer100gr": 23,
+                "pricePerKg": 1.19
+              },
+              {
+                "name": "arugula",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 3.65,
+                  "lipids": 0.66,
+                  "proteins": 2.58
+                },
+                "weight": 50,
+                "kcalPer100gr": 25,
+                "pricePerKg": 1.49
+              }
+            ],
+            "category": "first",
+            "kcal": 254.5,
+            "totalPrice": 1.9615,
+            "foodGroupList": [
+              "Fruit",
+              "DairyProduct",
+              "Vegetables"
+            ],
+            "mainGroup": "Vegetables"
+          },
+          {
+            "name": "steak and roasted asparagus",
+            "ingredients": [
+              {
+                "name": "ribeye",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 0,
+                  "lipids": 8.95,
+                  "proteins": 19.62
+                },
+                "weight": 250,
+                "kcalPer100gr": 165,
+                "pricePerKg": 19.99
+              },
+              {
+                "name": "asparagus",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 3.88,
+                  "lipids": 0.12,
+                  "proteins": 2.2
+                },
+                "weight": 50,
+                "kcalPer100gr": 20,
+                "pricePerKg": 8.6
+              }
+            ],
+            "category": "second",
+            "kcal": 422.5,
+            "totalPrice": 5.427499999999999,
+            "foodGroupList": [
+              "Meat",
+              "Vegetables"
+            ],
+            "mainGroup": "Vegetables"
+          },
+          {
+            "name": "banana split",
+            "ingredients": [
+              {
+                "name": "ice cream",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 28.2,
+                  "lipids": 11,
+                  "proteins": 3.8
+                },
+                "weight": 50,
+                "kcalPer100gr": 216,
+                "pricePerKg": 11.8
+              },
+              {
+                "name": "banana",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 22.84,
+                  "lipids": 0.33,
+                  "proteins": 1.09
+                },
+                "weight": 50,
+                "kcalPer100gr": 89,
+                "pricePerKg": 2.05
+              }
+            ],
+            "category": "dessert",
+            "kcal": 152.5,
+            "totalPrice": 0.6925000000000001,
+            "foodGroupList": [
+              "DairyProduct",
+              "Fruit"
+            ],
+            "mainGroup": "Fruit"
+          }
+        ],
+        "kcal": 1006.5,
+        "totalPrice": 8.4815,
+        "foodGroupList": [
+          "Legume",
+          "Fruit",
+          "DairyProduct",
+          "Vegetables",
+          "Meat"
+        ],
+        "mainGroup": "Meat"
+      },
+      {
+        "name": "menu2",
+        "plates": [
+          {
+            "name": "hummus",
+            "ingredients": [
+              {
+                "name": "chickpea",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 49.6,
+                  "lipids": 5.4,
+                  "proteins": 21.3
+                },
+                "weight": 50,
+                "kcalPer100gr": 332,
+                "pricePerKg": 5
+              },
+              {
+                "name": "lemon",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 9,
+                  "lipids": 0.4,
+                  "proteins": 0.7
+                },
+                "weight": 25,
+                "kcalPer100gr": 44,
+                "pricePerKg": 6
+              }
+            ],
+            "category": "entree",
+            "kcal": 177,
+            "totalPrice": 0.4,
+            "foodGroupList": [
+              "Legume",
+              "Fruit"
+            ],
+            "mainGroup": "Fruit"
+          },
+          {
+            "name": "manchego salad",
+            "ingredients": [
+              {
+                "name": "apple",
+                "origin": {
+                  "country": "Spain",
+                  "city": "Granada"
+                },
+                "macros": {
+                  "carbs": 12,
+                  "lipids": 0.17,
+                  "proteins": 0.3
+                },
+                "weight": 50,
+                "kcalPer100gr": 53,
+                "pricePerKg": 1.65
+              },
+              {
+                "name": "manchego",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Mancha"
+                },
+                "macros": {
+                  "carbs": 0.42,
+                  "lipids": 33.54,
+                  "proteins": 26.01
+                },
+                "weight": 50,
+                "kcalPer100gr": 408,
+                "pricePerKg": 34.9
+              },
+              {
+                "name": "spinach",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 3.63,
+                  "lipids": 0.39,
+                  "proteins": 2.89
+                },
+                "weight": 50,
+                "kcalPer100gr": 23,
+                "pricePerKg": 1.19
+              },
+              {
+                "name": "arugula",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 3.65,
+                  "lipids": 0.66,
+                  "proteins": 2.58
+                },
+                "weight": 50,
+                "kcalPer100gr": 25,
+                "pricePerKg": 1.49
+              }
+            ],
+            "category": "first",
+            "kcal": 254.5,
+            "totalPrice": 1.9615,
+            "foodGroupList": [
+              "Fruit",
+              "DairyProduct",
+              "Vegetables"
+            ],
+            "mainGroup": "Vegetables"
+          },
+          {
+            "name": "steak and roasted asparagus",
+            "ingredients": [
+              {
+                "name": "ribeye",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 0,
+                  "lipids": 8.95,
+                  "proteins": 19.62
+                },
+                "weight": 250,
+                "kcalPer100gr": 165,
+                "pricePerKg": 19.99
+              },
+              {
+                "name": "asparagus",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 3.88,
+                  "lipids": 0.12,
+                  "proteins": 2.2
+                },
+                "weight": 50,
+                "kcalPer100gr": 20,
+                "pricePerKg": 8.6
+              }
+            ],
+            "category": "second",
+            "kcal": 422.5,
+            "totalPrice": 5.427499999999999,
+            "foodGroupList": [
+              "Meat",
+              "Vegetables"
+            ],
+            "mainGroup": "Vegetables"
+          },
+          {
+            "name": "banana split",
+            "ingredients": [
+              {
+                "name": "ice cream",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 28.2,
+                  "lipids": 11,
+                  "proteins": 3.8
+                },
+                "weight": 50,
+                "kcalPer100gr": 216,
+                "pricePerKg": 11.8
+              },
+              {
+                "name": "banana",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 22.84,
+                  "lipids": 0.33,
+                  "proteins": 1.09
+                },
+                "weight": 50,
+                "kcalPer100gr": 89,
+                "pricePerKg": 2.05
+              }
+            ],
+            "category": "dessert",
+            "kcal": 152.5,
+            "totalPrice": 0.6925000000000001,
+            "foodGroupList": [
+              "DairyProduct",
+              "Fruit"
+            ],
+            "mainGroup": "Fruit"
+          },
+          {
+            "name": "strawberry and ice cream",
+            "ingredients": [
+              {
+                "name": "strawberry",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 7,
+                  "lipids": 0.5,
+                  "proteins": 0.7
+                },
+                "weight": 25,
+                "kcalPer100gr": 40,
+                "pricePerKg": 6
+              },
+              {
+                "name": "ice cream",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 28.2,
+                  "lipids": 11,
+                  "proteins": 3.8
+                },
+                "weight": 50,
+                "kcalPer100gr": 216,
+                "pricePerKg": 11.8
+              }
+            ],
+            "category": "dessert",
+            "kcal": 118,
+            "totalPrice": 0.7400000000000001,
+            "foodGroupList": [
+              "Fruit",
+              "DairyProduct"
+            ],
+            "mainGroup": "DairyProduct"
+          }
+        ],
+        "kcal": 1124.5,
+        "totalPrice": 9.2215,
+        "foodGroupList": [
+          "Legume",
+          "Fruit",
+          "DairyProduct",
+          "Vegetables",
+          "Meat"
+        ],
+        "mainGroup": "Meat"
+      },
+      {
+        "name": "menu1",
+        "plates": [
+          {
+            "name": "hummus",
+            "ingredients": [
+              {
+                "name": "chickpea",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 49.6,
+                  "lipids": 5.4,
+                  "proteins": 21.3
+                },
+                "weight": 50,
+                "kcalPer100gr": 332,
+                "pricePerKg": 5
+              },
+              {
+                "name": "lemon",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 9,
+                  "lipids": 0.4,
+                  "proteins": 0.7
+                },
+                "weight": 25,
+                "kcalPer100gr": 44,
+                "pricePerKg": 6
+              }
+            ],
+            "category": "entree",
+            "kcal": 177,
+            "totalPrice": 0.4,
+            "foodGroupList": [
+              "Legume",
+              "Fruit"
+            ],
+            "mainGroup": "Fruit"
+          },
+          {
+            "name": "manchego salad",
+            "ingredients": [
+              {
+                "name": "apple",
+                "origin": {
+                  "country": "Spain",
+                  "city": "Granada"
+                },
+                "macros": {
+                  "carbs": 12,
+                  "lipids": 0.17,
+                  "proteins": 0.3
+                },
+                "weight": 50,
+                "kcalPer100gr": 53,
+                "pricePerKg": 1.65
+              },
+              {
+                "name": "manchego",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Mancha"
+                },
+                "macros": {
+                  "carbs": 0.42,
+                  "lipids": 33.54,
+                  "proteins": 26.01
+                },
+                "weight": 50,
+                "kcalPer100gr": 408,
+                "pricePerKg": 34.9
+              },
+              {
+                "name": "spinach",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 3.63,
+                  "lipids": 0.39,
+                  "proteins": 2.89
+                },
+                "weight": 50,
+                "kcalPer100gr": 23,
+                "pricePerKg": 1.19
+              },
+              {
+                "name": "arugula",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 3.65,
+                  "lipids": 0.66,
+                  "proteins": 2.58
+                },
+                "weight": 50,
+                "kcalPer100gr": 25,
+                "pricePerKg": 1.49
+              }
+            ],
+            "category": "first",
+            "kcal": 254.5,
+            "totalPrice": 1.9615,
+            "foodGroupList": [
+              "Fruit",
+              "DairyProduct",
+              "Vegetables"
+            ],
+            "mainGroup": "Vegetables"
+          },
+          {
+            "name": "steak and roasted asparagus",
+            "ingredients": [
+              {
+                "name": "ribeye",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 0,
+                  "lipids": 8.95,
+                  "proteins": 19.62
+                },
+                "weight": 250,
+                "kcalPer100gr": 165,
+                "pricePerKg": 19.99
+              },
+              {
+                "name": "asparagus",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 3.88,
+                  "lipids": 0.12,
+                  "proteins": 2.2
+                },
+                "weight": 50,
+                "kcalPer100gr": 20,
+                "pricePerKg": 8.6
+              }
+            ],
+            "category": "second",
+            "kcal": 422.5,
+            "totalPrice": 5.427499999999999,
+            "foodGroupList": [
+              "Meat",
+              "Vegetables"
+            ],
+            "mainGroup": "Vegetables"
+          },
+          {
+            "name": "banana split",
+            "ingredients": [
+              {
+                "name": "ice cream",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 28.2,
+                  "lipids": 11,
+                  "proteins": 3.8
+                },
+                "weight": 50,
+                "kcalPer100gr": 216,
+                "pricePerKg": 11.8
+              },
+              {
+                "name": "banana",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 22.84,
+                  "lipids": 0.33,
+                  "proteins": 1.09
+                },
+                "weight": 50,
+                "kcalPer100gr": 89,
+                "pricePerKg": 2.05
+              }
+            ],
+            "category": "dessert",
+            "kcal": 152.5,
+            "totalPrice": 0.6925000000000001,
+            "foodGroupList": [
+              "DairyProduct",
+              "Fruit"
+            ],
+            "mainGroup": "Fruit"
+          }
+        ],
+        "kcal": 1006.5,
+        "totalPrice": 8.4815,
+        "foodGroupList": [
+          "Legume",
+          "Fruit",
+          "DairyProduct",
+          "Vegetables",
+          "Meat"
+        ],
+        "mainGroup": "Meat"
+      },
+      {
+        "name": "menu2",
+        "plates": [
+          {
+            "name": "hummus",
+            "ingredients": [
+              {
+                "name": "chickpea",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 49.6,
+                  "lipids": 5.4,
+                  "proteins": 21.3
+                },
+                "weight": 50,
+                "kcalPer100gr": 332,
+                "pricePerKg": 5
+              },
+              {
+                "name": "lemon",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 9,
+                  "lipids": 0.4,
+                  "proteins": 0.7
+                },
+                "weight": 25,
+                "kcalPer100gr": 44,
+                "pricePerKg": 6
+              }
+            ],
+            "category": "entree",
+            "kcal": 177,
+            "totalPrice": 0.4,
+            "foodGroupList": [
+              "Legume",
+              "Fruit"
+            ],
+            "mainGroup": "Fruit"
+          },
+          {
+            "name": "manchego salad",
+            "ingredients": [
+              {
+                "name": "apple",
+                "origin": {
+                  "country": "Spain",
+                  "city": "Granada"
+                },
+                "macros": {
+                  "carbs": 12,
+                  "lipids": 0.17,
+                  "proteins": 0.3
+                },
+                "weight": 50,
+                "kcalPer100gr": 53,
+                "pricePerKg": 1.65
+              },
+              {
+                "name": "manchego",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Mancha"
+                },
+                "macros": {
+                  "carbs": 0.42,
+                  "lipids": 33.54,
+                  "proteins": 26.01
+                },
+                "weight": 50,
+                "kcalPer100gr": 408,
+                "pricePerKg": 34.9
+              },
+              {
+                "name": "spinach",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 3.63,
+                  "lipids": 0.39,
+                  "proteins": 2.89
+                },
+                "weight": 50,
+                "kcalPer100gr": 23,
+                "pricePerKg": 1.19
+              },
+              {
+                "name": "arugula",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 3.65,
+                  "lipids": 0.66,
+                  "proteins": 2.58
+                },
+                "weight": 50,
+                "kcalPer100gr": 25,
+                "pricePerKg": 1.49
+              }
+            ],
+            "category": "first",
+            "kcal": 254.5,
+            "totalPrice": 1.9615,
+            "foodGroupList": [
+              "Fruit",
+              "DairyProduct",
+              "Vegetables"
+            ],
+            "mainGroup": "Vegetables"
+          },
+          {
+            "name": "steak and roasted asparagus",
+            "ingredients": [
+              {
+                "name": "ribeye",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 0,
+                  "lipids": 8.95,
+                  "proteins": 19.62
+                },
+                "weight": 250,
+                "kcalPer100gr": 165,
+                "pricePerKg": 19.99
+              },
+              {
+                "name": "asparagus",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 3.88,
+                  "lipids": 0.12,
+                  "proteins": 2.2
+                },
+                "weight": 50,
+                "kcalPer100gr": 20,
+                "pricePerKg": 8.6
+              }
+            ],
+            "category": "second",
+            "kcal": 422.5,
+            "totalPrice": 5.427499999999999,
+            "foodGroupList": [
+              "Meat",
+              "Vegetables"
+            ],
+            "mainGroup": "Vegetables"
+          },
+          {
+            "name": "banana split",
+            "ingredients": [
+              {
+                "name": "ice cream",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 28.2,
+                  "lipids": 11,
+                  "proteins": 3.8
+                },
+                "weight": 50,
+                "kcalPer100gr": 216,
+                "pricePerKg": 11.8
+              },
+              {
+                "name": "banana",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 22.84,
+                  "lipids": 0.33,
+                  "proteins": 1.09
+                },
+                "weight": 50,
+                "kcalPer100gr": 89,
+                "pricePerKg": 2.05
+              }
+            ],
+            "category": "dessert",
+            "kcal": 152.5,
+            "totalPrice": 0.6925000000000001,
+            "foodGroupList": [
+              "DairyProduct",
+              "Fruit"
+            ],
+            "mainGroup": "Fruit"
+          },
+          {
+            "name": "strawberry and ice cream",
+            "ingredients": [
+              {
+                "name": "strawberry",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 7,
+                  "lipids": 0.5,
+                  "proteins": 0.7
+                },
+                "weight": 25,
+                "kcalPer100gr": 40,
+                "pricePerKg": 6
+              },
+              {
+                "name": "ice cream",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 28.2,
+                  "lipids": 11,
+                  "proteins": 3.8
+                },
+                "weight": 50,
+                "kcalPer100gr": 216,
+                "pricePerKg": 11.8
+              }
+            ],
+            "category": "dessert",
+            "kcal": 118,
+            "totalPrice": 0.7400000000000001,
+            "foodGroupList": [
+              "Fruit",
+              "DairyProduct"
+            ],
+            "mainGroup": "DairyProduct"
+          }
+        ],
+        "kcal": 1124.5,
+        "totalPrice": 9.2215,
+        "foodGroupList": [
+          "Legume",
+          "Fruit",
+          "DairyProduct",
+          "Vegetables",
+          "Meat"
+        ],
+        "mainGroup": "Meat"
+      }
+    ],
+    "selectedPlates": []
+  },
+  "command": {
+    "selectedMenus": [
+      {
+        "name": "menu1",
+        "plates": [
+          {
+            "name": "hummus",
+            "ingredients": [
+              {
+                "name": "chickpea",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 49.6,
+                  "lipids": 5.4,
+                  "proteins": 21.3
+                },
+                "weight": 50,
+                "kcalPer100gr": 332,
+                "pricePerKg": 5
+              },
+              {
+                "name": "lemon",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 9,
+                  "lipids": 0.4,
+                  "proteins": 0.7
+                },
+                "weight": 25,
+                "kcalPer100gr": 44,
+                "pricePerKg": 6
+              }
+            ],
+            "category": "entree",
+            "kcal": 177,
+            "totalPrice": 0.4,
+            "foodGroupList": [
+              "Legume",
+              "Fruit"
+            ],
+            "mainGroup": "Fruit"
+          },
+          {
+            "name": "manchego salad",
+            "ingredients": [
+              {
+                "name": "apple",
+                "origin": {
+                  "country": "Spain",
+                  "city": "Granada"
+                },
+                "macros": {
+                  "carbs": 12,
+                  "lipids": 0.17,
+                  "proteins": 0.3
+                },
+                "weight": 50,
+                "kcalPer100gr": 53,
+                "pricePerKg": 1.65
+              },
+              {
+                "name": "manchego",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Mancha"
+                },
+                "macros": {
+                  "carbs": 0.42,
+                  "lipids": 33.54,
+                  "proteins": 26.01
+                },
+                "weight": 50,
+                "kcalPer100gr": 408,
+                "pricePerKg": 34.9
+              },
+              {
+                "name": "spinach",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 3.63,
+                  "lipids": 0.39,
+                  "proteins": 2.89
+                },
+                "weight": 50,
+                "kcalPer100gr": 23,
+                "pricePerKg": 1.19
+              },
+              {
+                "name": "arugula",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 3.65,
+                  "lipids": 0.66,
+                  "proteins": 2.58
+                },
+                "weight": 50,
+                "kcalPer100gr": 25,
+                "pricePerKg": 1.49
+              }
+            ],
+            "category": "first",
+            "kcal": 254.5,
+            "totalPrice": 1.9615,
+            "foodGroupList": [
+              "Fruit",
+              "DairyProduct",
+              "Vegetables"
+            ],
+            "mainGroup": "Vegetables"
+          },
+          {
+            "name": "steak and roasted asparagus",
+            "ingredients": [
+              {
+                "name": "ribeye",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 0,
+                  "lipids": 8.95,
+                  "proteins": 19.62
+                },
+                "weight": 250,
+                "kcalPer100gr": 165,
+                "pricePerKg": 19.99
+              },
+              {
+                "name": "asparagus",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 3.88,
+                  "lipids": 0.12,
+                  "proteins": 2.2
+                },
+                "weight": 50,
+                "kcalPer100gr": 20,
+                "pricePerKg": 8.6
+              }
+            ],
+            "category": "second",
+            "kcal": 422.5,
+            "totalPrice": 5.427499999999999,
+            "foodGroupList": [
+              "Meat",
+              "Vegetables"
+            ],
+            "mainGroup": "Vegetables"
+          },
+          {
+            "name": "banana split",
+            "ingredients": [
+              {
+                "name": "ice cream",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 28.2,
+                  "lipids": 11,
+                  "proteins": 3.8
+                },
+                "weight": 50,
+                "kcalPer100gr": 216,
+                "pricePerKg": 11.8
+              },
+              {
+                "name": "banana",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 22.84,
+                  "lipids": 0.33,
+                  "proteins": 1.09
+                },
+                "weight": 50,
+                "kcalPer100gr": 89,
+                "pricePerKg": 2.05
+              }
+            ],
+            "category": "dessert",
+            "kcal": 152.5,
+            "totalPrice": 0.6925000000000001,
+            "foodGroupList": [
+              "DairyProduct",
+              "Fruit"
+            ],
+            "mainGroup": "Fruit"
+          }
+        ],
+        "kcal": 1006.5,
+        "totalPrice": 8.4815,
+        "foodGroupList": [
+          "Legume",
+          "Fruit",
+          "DairyProduct",
+          "Vegetables",
+          "Meat"
+        ],
+        "mainGroup": "Meat"
+      },
+      {
+        "name": "menu2",
+        "plates": [
+          {
+            "name": "hummus",
+            "ingredients": [
+              {
+                "name": "chickpea",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 49.6,
+                  "lipids": 5.4,
+                  "proteins": 21.3
+                },
+                "weight": 50,
+                "kcalPer100gr": 332,
+                "pricePerKg": 5
+              },
+              {
+                "name": "lemon",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 9,
+                  "lipids": 0.4,
+                  "proteins": 0.7
+                },
+                "weight": 25,
+                "kcalPer100gr": 44,
+                "pricePerKg": 6
+              }
+            ],
+            "category": "entree",
+            "kcal": 177,
+            "totalPrice": 0.4,
+            "foodGroupList": [
+              "Legume",
+              "Fruit"
+            ],
+            "mainGroup": "Fruit"
+          },
+          {
+            "name": "manchego salad",
+            "ingredients": [
+              {
+                "name": "apple",
+                "origin": {
+                  "country": "Spain",
+                  "city": "Granada"
+                },
+                "macros": {
+                  "carbs": 12,
+                  "lipids": 0.17,
+                  "proteins": 0.3
+                },
+                "weight": 50,
+                "kcalPer100gr": 53,
+                "pricePerKg": 1.65
+              },
+              {
+                "name": "manchego",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Mancha"
+                },
+                "macros": {
+                  "carbs": 0.42,
+                  "lipids": 33.54,
+                  "proteins": 26.01
+                },
+                "weight": 50,
+                "kcalPer100gr": 408,
+                "pricePerKg": 34.9
+              },
+              {
+                "name": "spinach",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 3.63,
+                  "lipids": 0.39,
+                  "proteins": 2.89
+                },
+                "weight": 50,
+                "kcalPer100gr": 23,
+                "pricePerKg": 1.19
+              },
+              {
+                "name": "arugula",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 3.65,
+                  "lipids": 0.66,
+                  "proteins": 2.58
+                },
+                "weight": 50,
+                "kcalPer100gr": 25,
+                "pricePerKg": 1.49
+              }
+            ],
+            "category": "first",
+            "kcal": 254.5,
+            "totalPrice": 1.9615,
+            "foodGroupList": [
+              "Fruit",
+              "DairyProduct",
+              "Vegetables"
+            ],
+            "mainGroup": "Vegetables"
+          },
+          {
+            "name": "steak and roasted asparagus",
+            "ingredients": [
+              {
+                "name": "ribeye",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 0,
+                  "lipids": 8.95,
+                  "proteins": 19.62
+                },
+                "weight": 250,
+                "kcalPer100gr": 165,
+                "pricePerKg": 19.99
+              },
+              {
+                "name": "asparagus",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 3.88,
+                  "lipids": 0.12,
+                  "proteins": 2.2
+                },
+                "weight": 50,
+                "kcalPer100gr": 20,
+                "pricePerKg": 8.6
+              }
+            ],
+            "category": "second",
+            "kcal": 422.5,
+            "totalPrice": 5.427499999999999,
+            "foodGroupList": [
+              "Meat",
+              "Vegetables"
+            ],
+            "mainGroup": "Vegetables"
+          },
+          {
+            "name": "banana split",
+            "ingredients": [
+              {
+                "name": "ice cream",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 28.2,
+                  "lipids": 11,
+                  "proteins": 3.8
+                },
+                "weight": 50,
+                "kcalPer100gr": 216,
+                "pricePerKg": 11.8
+              },
+              {
+                "name": "banana",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 22.84,
+                  "lipids": 0.33,
+                  "proteins": 1.09
+                },
+                "weight": 50,
+                "kcalPer100gr": 89,
+                "pricePerKg": 2.05
+              }
+            ],
+            "category": "dessert",
+            "kcal": 152.5,
+            "totalPrice": 0.6925000000000001,
+            "foodGroupList": [
+              "DairyProduct",
+              "Fruit"
+            ],
+            "mainGroup": "Fruit"
+          },
+          {
+            "name": "strawberry and ice cream",
+            "ingredients": [
+              {
+                "name": "strawberry",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 7,
+                  "lipids": 0.5,
+                  "proteins": 0.7
+                },
+                "weight": 25,
+                "kcalPer100gr": 40,
+                "pricePerKg": 6
+              },
+              {
+                "name": "ice cream",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 28.2,
+                  "lipids": 11,
+                  "proteins": 3.8
+                },
+                "weight": 50,
+                "kcalPer100gr": 216,
+                "pricePerKg": 11.8
+              }
+            ],
+            "category": "dessert",
+            "kcal": 118,
+            "totalPrice": 0.7400000000000001,
+            "foodGroupList": [
+              "Fruit",
+              "DairyProduct"
+            ],
+            "mainGroup": "DairyProduct"
+          }
+        ],
+        "kcal": 1124.5,
+        "totalPrice": 9.2215,
+        "foodGroupList": [
+          "Legume",
+          "Fruit",
+          "DairyProduct",
+          "Vegetables",
+          "Meat"
+        ],
+        "mainGroup": "Meat"
+      },
+      {
+        "name": "menu1",
+        "plates": [
+          {
+            "name": "hummus",
+            "ingredients": [
+              {
+                "name": "chickpea",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 49.6,
+                  "lipids": 5.4,
+                  "proteins": 21.3
+                },
+                "weight": 50,
+                "kcalPer100gr": 332,
+                "pricePerKg": 5
+              },
+              {
+                "name": "lemon",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 9,
+                  "lipids": 0.4,
+                  "proteins": 0.7
+                },
+                "weight": 25,
+                "kcalPer100gr": 44,
+                "pricePerKg": 6
+              }
+            ],
+            "category": "entree",
+            "kcal": 177,
+            "totalPrice": 0.4,
+            "foodGroupList": [
+              "Legume",
+              "Fruit"
+            ],
+            "mainGroup": "Fruit"
+          },
+          {
+            "name": "manchego salad",
+            "ingredients": [
+              {
+                "name": "apple",
+                "origin": {
+                  "country": "Spain",
+                  "city": "Granada"
+                },
+                "macros": {
+                  "carbs": 12,
+                  "lipids": 0.17,
+                  "proteins": 0.3
+                },
+                "weight": 50,
+                "kcalPer100gr": 53,
+                "pricePerKg": 1.65
+              },
+              {
+                "name": "manchego",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Mancha"
+                },
+                "macros": {
+                  "carbs": 0.42,
+                  "lipids": 33.54,
+                  "proteins": 26.01
+                },
+                "weight": 50,
+                "kcalPer100gr": 408,
+                "pricePerKg": 34.9
+              },
+              {
+                "name": "spinach",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 3.63,
+                  "lipids": 0.39,
+                  "proteins": 2.89
+                },
+                "weight": 50,
+                "kcalPer100gr": 23,
+                "pricePerKg": 1.19
+              },
+              {
+                "name": "arugula",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 3.65,
+                  "lipids": 0.66,
+                  "proteins": 2.58
+                },
+                "weight": 50,
+                "kcalPer100gr": 25,
+                "pricePerKg": 1.49
+              }
+            ],
+            "category": "first",
+            "kcal": 254.5,
+            "totalPrice": 1.9615,
+            "foodGroupList": [
+              "Fruit",
+              "DairyProduct",
+              "Vegetables"
+            ],
+            "mainGroup": "Vegetables"
+          },
+          {
+            "name": "steak and roasted asparagus",
+            "ingredients": [
+              {
+                "name": "ribeye",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 0,
+                  "lipids": 8.95,
+                  "proteins": 19.62
+                },
+                "weight": 250,
+                "kcalPer100gr": 165,
+                "pricePerKg": 19.99
+              },
+              {
+                "name": "asparagus",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 3.88,
+                  "lipids": 0.12,
+                  "proteins": 2.2
+                },
+                "weight": 50,
+                "kcalPer100gr": 20,
+                "pricePerKg": 8.6
+              }
+            ],
+            "category": "second",
+            "kcal": 422.5,
+            "totalPrice": 5.427499999999999,
+            "foodGroupList": [
+              "Meat",
+              "Vegetables"
+            ],
+            "mainGroup": "Vegetables"
+          },
+          {
+            "name": "banana split",
+            "ingredients": [
+              {
+                "name": "ice cream",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 28.2,
+                  "lipids": 11,
+                  "proteins": 3.8
+                },
+                "weight": 50,
+                "kcalPer100gr": 216,
+                "pricePerKg": 11.8
+              },
+              {
+                "name": "banana",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 22.84,
+                  "lipids": 0.33,
+                  "proteins": 1.09
+                },
+                "weight": 50,
+                "kcalPer100gr": 89,
+                "pricePerKg": 2.05
+              }
+            ],
+            "category": "dessert",
+            "kcal": 152.5,
+            "totalPrice": 0.6925000000000001,
+            "foodGroupList": [
+              "DairyProduct",
+              "Fruit"
+            ],
+            "mainGroup": "Fruit"
+          }
+        ],
+        "kcal": 1006.5,
+        "totalPrice": 8.4815,
+        "foodGroupList": [
+          "Legume",
+          "Fruit",
+          "DairyProduct",
+          "Vegetables",
+          "Meat"
+        ],
+        "mainGroup": "Meat"
+      },
+      {
+        "name": "menu2",
+        "plates": [
+          {
+            "name": "hummus",
+            "ingredients": [
+              {
+                "name": "chickpea",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 49.6,
+                  "lipids": 5.4,
+                  "proteins": 21.3
+                },
+                "weight": 50,
+                "kcalPer100gr": 332,
+                "pricePerKg": 5
+              },
+              {
+                "name": "lemon",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 9,
+                  "lipids": 0.4,
+                  "proteins": 0.7
+                },
+                "weight": 25,
+                "kcalPer100gr": 44,
+                "pricePerKg": 6
+              }
+            ],
+            "category": "entree",
+            "kcal": 177,
+            "totalPrice": 0.4,
+            "foodGroupList": [
+              "Legume",
+              "Fruit"
+            ],
+            "mainGroup": "Fruit"
+          },
+          {
+            "name": "manchego salad",
+            "ingredients": [
+              {
+                "name": "apple",
+                "origin": {
+                  "country": "Spain",
+                  "city": "Granada"
+                },
+                "macros": {
+                  "carbs": 12,
+                  "lipids": 0.17,
+                  "proteins": 0.3
+                },
+                "weight": 50,
+                "kcalPer100gr": 53,
+                "pricePerKg": 1.65
+              },
+              {
+                "name": "manchego",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Mancha"
+                },
+                "macros": {
+                  "carbs": 0.42,
+                  "lipids": 33.54,
+                  "proteins": 26.01
+                },
+                "weight": 50,
+                "kcalPer100gr": 408,
+                "pricePerKg": 34.9
+              },
+              {
+                "name": "spinach",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 3.63,
+                  "lipids": 0.39,
+                  "proteins": 2.89
+                },
+                "weight": 50,
+                "kcalPer100gr": 23,
+                "pricePerKg": 1.19
+              },
+              {
+                "name": "arugula",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 3.65,
+                  "lipids": 0.66,
+                  "proteins": 2.58
+                },
+                "weight": 50,
+                "kcalPer100gr": 25,
+                "pricePerKg": 1.49
+              }
+            ],
+            "category": "first",
+            "kcal": 254.5,
+            "totalPrice": 1.9615,
+            "foodGroupList": [
+              "Fruit",
+              "DairyProduct",
+              "Vegetables"
+            ],
+            "mainGroup": "Vegetables"
+          },
+          {
+            "name": "steak and roasted asparagus",
+            "ingredients": [
+              {
+                "name": "ribeye",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 0,
+                  "lipids": 8.95,
+                  "proteins": 19.62
+                },
+                "weight": 250,
+                "kcalPer100gr": 165,
+                "pricePerKg": 19.99
+              },
+              {
+                "name": "asparagus",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 3.88,
+                  "lipids": 0.12,
+                  "proteins": 2.2
+                },
+                "weight": 50,
+                "kcalPer100gr": 20,
+                "pricePerKg": 8.6
+              }
+            ],
+            "category": "second",
+            "kcal": 422.5,
+            "totalPrice": 5.427499999999999,
+            "foodGroupList": [
+              "Meat",
+              "Vegetables"
+            ],
+            "mainGroup": "Vegetables"
+          },
+          {
+            "name": "banana split",
+            "ingredients": [
+              {
+                "name": "ice cream",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 28.2,
+                  "lipids": 11,
+                  "proteins": 3.8
+                },
+                "weight": 50,
+                "kcalPer100gr": 216,
+                "pricePerKg": 11.8
+              },
+              {
+                "name": "banana",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 22.84,
+                  "lipids": 0.33,
+                  "proteins": 1.09
+                },
+                "weight": 50,
+                "kcalPer100gr": 89,
+                "pricePerKg": 2.05
+              }
+            ],
+            "category": "dessert",
+            "kcal": 152.5,
+            "totalPrice": 0.6925000000000001,
+            "foodGroupList": [
+              "DairyProduct",
+              "Fruit"
+            ],
+            "mainGroup": "Fruit"
+          },
+          {
+            "name": "strawberry and ice cream",
+            "ingredients": [
+              {
+                "name": "strawberry",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 7,
+                  "lipids": 0.5,
+                  "proteins": 0.7
+                },
+                "weight": 25,
+                "kcalPer100gr": 40,
+                "pricePerKg": 6
+              },
+              {
+                "name": "ice cream",
+                "origin": {
+                  "country": "Spain",
+                  "city": "La Victoria"
+                },
+                "macros": {
+                  "carbs": 28.2,
+                  "lipids": 11,
+                  "proteins": 3.8
+                },
+                "weight": 50,
+                "kcalPer100gr": 216,
+                "pricePerKg": 11.8
+              }
+            ],
+            "category": "dessert",
+            "kcal": 118,
+            "totalPrice": 0.7400000000000001,
+            "foodGroupList": [
+              "Fruit",
+              "DairyProduct"
+            ],
+            "mainGroup": "DairyProduct"
+          }
+        ],
+        "kcal": 1124.5,
+        "totalPrice": 9.2215,
+        "foodGroupList": [
+          "Legume",
+          "Fruit",
+          "DairyProduct",
+          "Vegetables",
+          "Meat"
+        ],
+        "mainGroup": "Meat"
+      }
+    ],
+    "selectedPlates": []
+  }
+}
