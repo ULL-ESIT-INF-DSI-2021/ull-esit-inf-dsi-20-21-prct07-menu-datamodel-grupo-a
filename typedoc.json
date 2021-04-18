@@ -1,4 +1,24 @@
 {
-  "entryPoints": [],
-  "out": "doc"
+  "entryPoints": [
+    "./src/carte.ts",
+    "./src/command.ts",
+    "./src/dairyProduct.ts",
+    "./src/dbManager.ts",
+    "./src/eggProduct.ts",
+    "./src/fish.ts",
+    "./src/food.ts",
+    "./src/fruit.ts",
+    "./src/helpers.ts",
+    "./src/jsonMenu.ts",
+    "./src/jsonPlate.ts",
+    "./src/legume.ts",
+    "./src/meat.ts",
+    "./src/tofu.ts",
+    "./src/menu.ts",
+    "./src/plate.ts",
+    "./src/seed.ts",
+    "./src/vegetables.ts",
+    "./src/nut.ts"
+  ],
+  "out": "./docs"
 }

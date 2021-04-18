@@ -2,7 +2,7 @@ import { Menu } from './menu';
 import { Plate } from './plate';
 
 /**
- * Class that handles a Carte, made out of different menus.
+ * @description Class that handles a Carte, made out of different menus.
  */
 export class Carte {
   private availablePlates: Plate[];

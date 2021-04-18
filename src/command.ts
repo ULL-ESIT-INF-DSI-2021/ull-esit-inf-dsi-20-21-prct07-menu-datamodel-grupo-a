@@ -31,27 +31,46 @@ export class Command {
     }
     return Command.commandInstance;
   }
-
+  /**
+   * @description Getter method for the restaurant carte
+   * @returns Returns a Carte
+   */
   public getRestaurantCarte() {
     return this.restaurantCarte;
   }
-
+  /**
+   * @description Setter method for the carte
+   */
   public setRestaurantCarte(carte: Carte) {
     this.restaurantCarte = carte;
   }
-
+  /**
+   * @description Getter menu for the selected menus
+   * @returns Returns a menu array
+   */
   public getSelectedMenus(): Menu[] {
     return this.selectedMenus;
   }
-
+  /**
+   * @description Setter menu for the selected menus, if there are some menus
+   * the new ones are added to the existing ones
+   * @param menus Consists of a menu array
+   */
   public setSelectedMenus(menus: Menu[]) {
     this.selectedMenus.push(...menus);
   }
-
+  /**
+   * @description Getter for the selected plates
+   * @return Returns a plate array
+   */
   public getSelectedPlates(): Plate[] {
     return this.selectedPlates;
   }
-
+  /**
+   * @description Setter method for the selected plates, if there are plates
+   * the new ones are added to the array of plates
+   * @param plates Consists of a plate array
+   */
   public setSelectedPlates(plates: Plate[]) {
     this.selectedPlates.push(...plates);
   }
