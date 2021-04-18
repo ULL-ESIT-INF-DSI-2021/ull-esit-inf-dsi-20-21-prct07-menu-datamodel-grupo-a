@@ -50,6 +50,12 @@ _Métodos de ejemplo en la clase Food_
 _Método de ejemplo en la clase Carte_
 ## Implementacion de Inquirer
 
+Se diseñaron multiples prompts multiniveles para realizar todos las acciones solicitadas. siguiendo un diagrama de flujo tal que:
+
+![Diagram de flujo](img/flowchart.png)
+
+Lo interesante es la implementacion de los prompts, en donde hubo que trabajar con promesas y asincronía.
+
 ## Implementacion de LowDB
 
 ## Github Actions
@@ -84,8 +90,10 @@ Además, una vez enlazado el repositorio podremos utilizar el badge que nos prop
 Finalmente, tras acabar de configurar todo lo necesario para que se lanzen correctamente las acciones de Github, nuestro repositorio tiene un aspecto similar al siguiente: 
 
 ![Badges](img/badges.png)
+
 ## Conclusiones
 
+Durante el desarrollo, la fase del diseño de clases fue la mas sencilla, teniendo en cuenta como se ha practicado esto en las prácticas anteriores. Tras realizar los tests correspondientes, se inició el desarrollo de la interfaz de usuario con lowdb. La mayor complicación se encontró en la necesidad de trabajar con asincronía a pesar de no haberla impartido. Otro inconveniente, fue que el ejemplo del libro para inquirer y lowdb era sustancialmente mas sencillo que lo que se solicitaba en el guión con lo cual no lo pudimos usar demasiado como ejemplo. De resto, el proceso de diseño y codificación fue encontrado satisfactorio, independientemente de las complicaciones durante el desarrollo.
 ## Bibliografía
 
 Inquirer.js (s.f.). En _NPM_. Recuperado el 10 de abril de 2021 de https://www.npmjs.com/package/inquirer
