@@ -7,7 +7,6 @@ import {
   UIOptionsShowCarte, UIOptionsStart
 } from './helpers';
 import { Menu } from './menu';
-import * as Data from './data';
 
 /**
  * @description Singleton Command class that handles the Inquirer.js
